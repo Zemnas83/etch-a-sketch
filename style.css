@@ -1,0 +1,63 @@
+* {
+    background-color: lightblue;
+}
+#container {
+    width: 80vw; /* 80% of viewport width */
+    height: 80vw;
+    max-width: 600px; /* to ensure it's not too large */
+    max-height: 600px;
+    margin: 20px auto; /* centers the grid */
+    border: 2px solid black;
+    position: relative; /* to position the grid inside */
+}
+
+/* Grid styling */
+#grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Cell styling */
+#grid > div {
+    border: 1px solid gray; 
+    background-color: #ffffff; 
+}
+
+/* Button Styling */
+.newGrid {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.eraser {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.newGrid:hover {
+    background-color: #555;
+}
+
+/* Header and Title Styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Arial', sans-serif;
+}
